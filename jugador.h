@@ -1,7 +1,7 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
 
-
+#include <QGraphicsScene>
 #include <QGraphicsRectItem>
 
 
