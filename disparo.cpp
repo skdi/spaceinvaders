@@ -6,7 +6,6 @@ disparo::disparo(){
 
     //dibujando la bala
     setRect(0,0,7,28);
-
     //conectando al tiempo
     QTimer *tiempo=new QTimer();//creo un punto de la funcion respecto al tiempo
     connect(tiempo,SIGNAL(timeout()),this,SLOT(movimiento()));//conecto mi puntero con la señal,del disparo,y el movimiento
