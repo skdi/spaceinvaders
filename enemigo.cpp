@@ -32,6 +32,9 @@ void enemigo::movimiento(){
     if(pos().y()+ rect().height()>600 || pos().x()+rect().width()>790){
         scene()->removeItem(this);
         health->decrementa();
+        /*if(health->health==0){
+            scene()->clear();
+        }*/
         delete this;
         //return;
     }
