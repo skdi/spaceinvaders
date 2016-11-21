@@ -6,7 +6,7 @@
 #include <typeinfo>//para determinar el tipo del objeto ,lo uso en la colision de la bala y el enemigo
 #include "puntaje.h"
 
-//extern puntaje *score=new puntaje();
+extern puntaje *score;
 
 
 disparo::disparo(){
@@ -24,8 +24,7 @@ void disparo::movimiento(){
     QList<QGraphicsItem *>choque=collidingItems();//creo una lista de punteros de tipo item grafico
     for(int i=0,n=choque.size();i<n;++i){//recorro la lista y compruebo
         if(typeid(*(choque[i]))==typeid(enemigo)){//comprueba el tipo del objeto con el de enemigo
-
-            //score->aumenta();
+            score->aumenta();
             //borrar de la pantalla ambos items
             scene()->removeItem(choque[i]);
             scene()->removeItem(this);

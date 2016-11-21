@@ -5,8 +5,10 @@
 #include <QGraphicsView>
 #include <QTimer>
 #include "puntaje.h"
+#include "vida.h"
 
-
+puntaje *score;
+vida *health;
 
 int main(int argc,char *argv[])
 {
@@ -44,8 +46,12 @@ int main(int argc,char *argv[])
     QObject::connect(tiempo,SIGNAL(timeout()),jugado,SLOT(spawn()));
     tiempo->start(1000);//delay de creacion del enemigo
     //agregando puntaje
-    puntaje *score=new puntaje();
+    score=new puntaje();
     scene->addItem(score);
+    //agregando vida
+    health=new vida();
+    health->setPos(0,20);
+    scene->addItem(health);
 
     return a.exec();//retorna un tipo ejecutable del programa
 }

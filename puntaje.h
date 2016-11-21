@@ -7,7 +7,7 @@ public:
     puntaje(QGraphicsItem *objeto=0);
     void aumenta();
     int getscore();
-//private:
+private:
     int score;
 };
 

@@ -3,8 +3,11 @@
 #include <QGraphicsScene>
 #include <QList>//lista para objetos en este caso tipo enemigo
 #include <stdlib.h>//funcion random
+#include "vida.h"
 
 #include <QDebug>
+
+extern vida *health;
 
 enemigo::enemigo():QObject(),QGraphicsRectItem(){
 
@@ -28,6 +31,7 @@ void enemigo::movimiento(){
     //borrando las enemigos fuera de la pantalla
     if(pos().y()+ rect().height()>600 || pos().x()+rect().width()>790){
         scene()->removeItem(this);
+        health->decrementa();
         delete this;
         //return;
     }

@@ -16,11 +16,13 @@ SOURCES += main.cpp\
         jugador.cpp \
     disparo.cpp \
     enemigo.cpp \
-    puntaje.cpp
+    puntaje.cpp \
+    vida.cpp
 
 HEADERS  += jugador.h \
     disparo.h \
     enemigo.h \
-    puntaje.h
+    puntaje.h \
+    vida.h
 
 FORMS    +=

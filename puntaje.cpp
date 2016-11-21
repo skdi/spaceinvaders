@@ -12,7 +12,7 @@ puntaje::puntaje(QGraphicsItem *objeto):QGraphicsTextItem()
 
 void puntaje::aumenta(){
     score+=10;
-    setPlainText(QString("Score:")+QString::number(score));//mostrara score:1
+    setPlainText(QString("Score:")+QString::number(score));//mostrara score:10
 }
 
 int puntaje::getscore(){
