@@ -9,7 +9,7 @@
 class jugador:public QObject, public QGraphicsRectItem{
     Q_OBJECT
 public :
-        void keyPressEvent(QKeyEvent *evento);
+        void keyPressEvent(QKeyEvent *evento);//tipoparticular de funcion para la recepcion de teclas
 public slots:
         void spawn();
 
