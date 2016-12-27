@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui \
+         multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,12 +18,23 @@ SOURCES += main.cpp\
     disparo.cpp \
     enemigo.cpp \
     puntaje.cpp \
-    vida.cpp
+    vida.cpp \
+    boss.cpp \
+    rayo.cpp \
+    game.cpp
 
 HEADERS  += jugador.h \
     disparo.h \
     enemigo.h \
     puntaje.h \
-    vida.h
+    vida.h \
+    boss.h \
+    rayo.h \
+    game.h
 
 FORMS    +=
+
+RESOURCES += \
+    res.qrc
+
+DISTFILES +=

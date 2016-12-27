@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/sonidos">
+        <file>bgsoundre.mp3</file>
+        <file>disparo1.mp3</file>
+        <file>rayo.mp3</file>
+        <file>Sboss.mp3</file>
+    </qresource>
+    <qresource prefix="/imagenes">
+        <file>misil.png</file>
+        <file>bossv2.png</file>
+        <file>disparov2.png</file>
+        <file>enemyv2.png</file>
+        <file>playerv2.png</file>
+        <file>bgwa.jpg</file>
+        <file>menu.png</file>
+    </qresource>
+</RCC>

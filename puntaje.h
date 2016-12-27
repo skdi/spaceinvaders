@@ -5,7 +5,7 @@
 class puntaje:public QGraphicsTextItem{
 public:
     puntaje(QGraphicsItem *objeto=0);
-    void aumenta();
+    void aumenta(int i);
     int getscore();
 private:
     int score;

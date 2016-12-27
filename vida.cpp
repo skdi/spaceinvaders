@@ -1,7 +1,7 @@
 #include "vida.h"
 #include <QFont>
 
-vida::vida(QGraphicsItem *objeto):QGraphicsTextItem()
+vida::vida():QGraphicsTextItem()
 {
     health=5;
     //agregando texto a la pantalla
@@ -10,13 +10,7 @@ vida::vida(QGraphicsItem *objeto):QGraphicsTextItem()
     setFont(QFont("times",16));//fuente
 }
 
-
-
-void vida::decrementa(){
-    health-=1;
+void vida::decrementa(int i){
+    health-=i;
     setPlainText(QString("Vida:")+QString::number(health));//mostrara score:1
-}
-
-int vida::getvida(){
-    return health;
 }

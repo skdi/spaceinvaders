@@ -4,9 +4,9 @@
 
 class vida:public QGraphicsTextItem{
 public:
-    vida(QGraphicsItem *objeto=0);
-    void decrementa();
-    int getvida();
+    vida();
+    void decrementa(int i);
+    int getvida(){return health;}
 private:
     int health;
 };
